@@ -14,7 +14,8 @@ sequence will reach the loop `1, 4, 2, 1`.
 # This project
 
 My goal is to prove that no other loop is possible, meaning that this
-sequence must either diverge to infinity or reach `1`. While experimenting with different ideas was enjoyable, this goal has not been reached.
+sequence must either diverge to infinity or reach `1`. While experimenting with different ideas was enjoyable, 
+this goal has not been reached.
 
 # Progress
 
