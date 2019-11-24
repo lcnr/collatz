@@ -15,10 +15,8 @@ pub fn prev_power(x: u128) -> u128 {
             (false, W(false), W(false)) => {
                 prev_bit = W(false);
                 carry = W(false);
-            },
-            (false, W(false), W(true)) |
-            (false, W(true), W(false)) |
-            (true, W(true), W(true)) => {
+            }
+            (false, W(false), W(true)) | (false, W(true), W(false)) | (true, W(true), W(true)) => {
                 n |= 1 << bit;
                 prev_bit = W(true);
                 carry = W(true);
@@ -32,8 +30,7 @@ pub fn prev_power(x: u128) -> u128 {
                 prev_bit = W(true);
                 carry = W(false);
             }
-            (true, W(false), W(true)) |
-            (true, W(true), W(false)) => {
+            (true, W(false), W(true)) | (true, W(true), W(false)) => {
                 prev_bit = W(false);
                 carry = W(false);
             }

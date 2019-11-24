@@ -1,5 +1,8 @@
 # Collatz conjecture
 
+To preview this file, I recommend opening README.html in a browser.
+The visual studio code extension [Markdown+Math] is used to render the equations.
+
 Form a sequence by beginning with an integer `n` and
 repeatedly applying the function `f(n)`, taking the result of each step as the input of the next.
 
@@ -10,6 +13,8 @@ f(n) := n / 2       if (n % 2 == 0)
 
 The collatz conjecture states that for any natural number `n` this
 sequence will reach the loop `1, 4, 2, 1`.
+
+[Markdown+Math]: https://marketplace.visualstudio.com/items?itemName=goessner.mdmath
 
 # This project
 
