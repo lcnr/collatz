@@ -1,0 +1,34 @@
+% !TeX root = ./templatetop.tex
+\documentclass[12pt]{extreport}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{dsfont}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{stmaryrd}
+\usepackage{tikz-cd}
+\begin{document}
+\chapter{collatz conjecture}
+
+Form a sequence by beginning with an integer $n$ and repeatedly applying the function $f(n)$,
+taking the result of each step as the input of the next.
+$$
+f(n) := 
+\begin{cases}
+    n / 2 & \text{if n mod 2 = 0} \\
+    3n + 1 & \text{otherwise}
+\end{cases}
+$$
+
+The collatz conjecture states that for any natural number $n$ this
+sequence will reach the loop $1, 4, 2, 1$. My goal is to prove that no other loop exists,
+meaning that this sequence must either diverge to infinity or reach 1.
+
+\subsection{base 3}
+
+A number in base the can be defined as
+$$
+\sum^\infty_{n=0} 3^na_n
+$$
+It is even if $\sum^\infty_{n=0}a_n$ is even. 
+\end{document}
